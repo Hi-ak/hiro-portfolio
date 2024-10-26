@@ -27,6 +27,7 @@ export const ProjectCard: React.FC<{
               alt={proj.name}
             />
             <img className={styles.framePhoto} src="phoneFrame.png" />
+            aaa
           </div>
         </div>
       ) : null}
