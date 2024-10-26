@@ -1,11 +1,27 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --header-height: 50px;
+  --color-primary: rgb(0, 119, 190);
+
+  --color-grad-end: rgb(0, 153, 153);
+  --color-footer: rgb(244, 233, 222);
+
+  --font-bg-grad1: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-grad-end)
+  );
+
+  --font-color-primary: #333333;
+
+  --color-border: rgb(0, 119, 190);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ededed;
     --foreground: #ededed;
   }
 }
