@@ -1,0 +1,82 @@
+.projectCard {
+  position: relative;
+  border-radius: 30px;
+  border: 2px solid var(--color-border);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: calc(50% - 20px); /* 2つ並べるために幅を調整 */
+  box-sizing: border-box; /* パディングとマージンを含める */
+
+  min-width: 500px;
+  min-height: 300px;
+  padding: 30px;
+  .bgPhoto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  display: flex;
+  flex-direction: row;
+
+  .textContainer {
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    color: var(--font-color-primary);
+    .name {
+      font-size: 50px;
+      font-weight: 500;
+      background: var(--font-color-primary);
+      -webkit-background-clip: text; /* テキストに背景をクリップ */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .description {
+      padding: 10px;
+      font-size: 25px;
+    }
+  }
+
+  .photoContainer {
+    min-width: 200px;
+    margin: 20px;
+    width: 150px;
+    height: 400px;
+    overflow: hidden;
+
+    .photo {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      overflow: hidden;
+      background-image: url("/public/phoneFrame.png");
+      img {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        height: 96%;
+        top: 2%;
+        object-fit: fill;
+        border-radius: 30px;
+      }
+      .framePhoto {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        border-radius: 28px;
+      }
+    }
+  }
+}
