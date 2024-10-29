@@ -29,16 +29,22 @@
   .textContainer {
     position: relative;
     flex: 1;
-    max-width: 350px;
+    max-width: 400px;
     color: var(--font-color-primary);
     .name {
       font-size: 50px;
       font-weight: 500;
+      max-width: 400px;
+      text-overflow: ellipsis;
       background: var(--font-color-primary);
       -webkit-background-clip: text; /* テキストに背景をクリップ */
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      &__small {
+        font-size: 40px;
+      }
     }
+
     .description {
       padding: 10px;
       font-size: 25px;

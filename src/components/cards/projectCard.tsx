@@ -3,7 +3,8 @@ import { PhotoStyle, Project } from "@/common/types/project";
 
 export const ProjectCard: React.FC<{
   proj: Project;
-}> = ({ proj }) => {
+  isSmall: Boolean;
+}> = ({ proj, isSmall }) => {
   return (
     <div className={styles.projectCard}>
       {proj.photoStyle == PhotoStyle.Bg ? (
@@ -15,7 +16,14 @@ export const ProjectCard: React.FC<{
         ></div>
       ) : null}
       <div className={styles.textContainer}>
-        <div className={styles.name}>{proj.name}</div>
+        {isSmall ? (
+          <div className={`${styles.name} ${styles.name__small}`}>
+            {proj.name}
+          </div>
+        ) : (
+          <div className={styles.name}>{proj.name}</div>
+        )}
+
         <div className={styles.description}>{proj.description}</div>
       </div>
       {proj.photoStyle == PhotoStyle.InScreen ? (

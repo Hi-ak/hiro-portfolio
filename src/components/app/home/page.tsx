@@ -68,7 +68,15 @@ export const HomePageComponent: React.FC<{}> = ({}) => {
 
         <div className={styles.projectsContainer}>
           {ProjectList.map((proj) => {
-            return <ProjectCard key={proj.name} proj={proj as Project} />;
+            return (
+              <ProjectCard
+                key={proj.name}
+                proj={proj as Project}
+                isSmall={
+                  proj.name == "Gakushoku.net" || proj.name == "RibbonCakeRun"
+                }
+              />
+            );
           })}
         </div>
 
