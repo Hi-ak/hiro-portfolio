@@ -7,6 +7,8 @@ import Image from "next/image";
 import { ProjectCard } from "@/components/cards/projectCard";
 import { SectionTitle } from "@/components/layouts/sectionTitle";
 import { PhotoStyle, Project } from "@/common/types/project";
+import { AwardList } from "@/common/types/award.tsx";
+import { AwardsSectionComponent } from "./awards";
 
 export const HomePageComponent: React.FC<{}> = ({}) => {
   /*
@@ -81,6 +83,10 @@ export const HomePageComponent: React.FC<{}> = ({}) => {
         </div>
 
         <SectionTitle title="Awards" id="awards" />
+
+        <div className={styles.awardsContainer}>
+          <AwardsSectionComponent awardList={AwardList} />
+        </div>
       </div>
     </div>
   );

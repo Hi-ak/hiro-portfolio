@@ -104,5 +104,38 @@
 
       //.projectCardへ
     }
+
+    .awardsContainer {
+      .awards {
+        //.awardsTimeline/
+
+        .awardCard {
+          .title {
+            margin-bottom: 5px;
+          }
+          .subtitle {
+          }
+
+          .description {
+            font-size: 18px;
+          }
+
+          .date {
+            font-size: 15px;
+            color: var(--font-color-primary);
+            font-weight: 600;
+          }
+
+          a {
+            text-decoration: underline;
+            &:active,
+            &:focus,
+            &:hover {
+              color: yellow;
+            }
+          }
+        }
+      }
+    }
   }
 }

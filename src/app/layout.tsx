@@ -4,6 +4,8 @@ import "./globals.scss";
 
 import { Header } from "@/components/layouts/header";
 
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
