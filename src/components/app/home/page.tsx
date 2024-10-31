@@ -4,11 +4,14 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "@/common/styles/components/app/home.module.scss";
 
 import Image from "next/image";
-import { ProjectCard } from "@/components/cards/projectCard";
+import { ProjectCard } from "@/components/cards/ProjectCard";
 import { SectionTitle } from "@/components/layouts/sectionTitle";
 import { PhotoStyle, Project } from "@/common/types/project";
 import { AwardList } from "@/common/types/award.tsx";
 import { AwardsSectionComponent } from "./awards";
+import { TypingText } from "@/components/typing/TypingText";
+import { SocialInfoListComponent } from "@/components/social/SocialInfoList";
+import { SOCIAL_INFO_LIST } from "@/common/types/social";
 
 export const HomePageComponent: React.FC<{}> = ({}) => {
   /*
@@ -60,8 +63,12 @@ export const HomePageComponent: React.FC<{}> = ({}) => {
           <div className={styles.profileContainer}>
             <div className={styles.profile}>
               <h1 className={styles.name}>Hiroyuki Akiyama</h1>
-              <div className={styles.motto}>Develop Web & Game for</div>
-              <div className={styles.typing}>Problem solving</div>
+              <div className={styles.motto}>Develop Web Apps & Games for</div>
+              {/* <div className={styles.typing}>Problem solving</div> */}
+              <TypingText
+                words={["Problem-solving", "Communication", "Fun", "Friends"]}
+              />
+              <SocialInfoListComponent socialList={SOCIAL_INFO_LIST} />
             </div>
           </div>
         </div>
