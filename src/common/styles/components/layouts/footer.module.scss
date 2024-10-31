@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  min-height: 36px;
+  width: 100dvw;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+    color: white;
+    .bold {
+      font-weight: 600;
+    }
+  }
+}

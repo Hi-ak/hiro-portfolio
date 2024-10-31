@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.scss";
 
 import { Header } from "@/components/layouts/header";
+import { Footer } from "@/components/layouts/footer";
 
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           <Header />
           {children}
+          <Footer />
         </body>
       </html>
     </>
