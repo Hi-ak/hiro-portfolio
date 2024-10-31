@@ -59,7 +59,7 @@ export const AwardList: Award[] = [
     ),
     category: AwardCategory.Web,
     dateStr: "Jul. - Sep. 2023",
-    tags: ["Flask", "Python"],
+    tags: ["Python", "Flask"],
   },
   {
     name: (
@@ -95,14 +95,14 @@ export const AwardList: Award[] = [
     ),
     category: AwardCategory.Game,
     dateStr: "Oct. 2021 - Jul. 2022",
-    tags: ["Unity", "AI"],
+    tags: ["Unity", "ZBrush", "AI"],
   },
 
   {
     name: "Recipient of Harvard Prize Book",
     orgName: "Harvard Club of Japan",
     description:
-      "Recommended for Harvard Prize Book by my school. The award is for bookworms who show their passion and life story with books.",
+      "Nominated for Harvard Prize Book by my school. The award is for bookworms who show their passion and life story with books.",
     category: AwardCategory.Scholastic,
     dateStr: "Mar. 2024",
   },
