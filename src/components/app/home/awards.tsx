@@ -12,6 +12,7 @@ import WorkIcon from "@mui/icons-material/Work";
 
 import { ICONS } from "@/components/utils/icons";
 import { COLORS } from "@/components/utils/colors";
+import { SkillTag } from "@/components/cards/SkillTag";
 
 export const AwardsSectionComponent: React.FC<{ awardList: Award[] }> = ({
   awardList,
