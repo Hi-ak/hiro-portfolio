@@ -1,0 +1,65 @@
+.container {
+  height: 50px;
+  display: flex;
+  gap: 0 10px;
+  .socialIcon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 10%;
+
+      cursor: pointer;
+      /*
+      transition: box-shadow 0.3s ease; /* 影が浮き出るようなトランジション
+
+      影の指定 (浮き出る感じ) 
+      box-shadow: 0 4px 6px var(--color-primary-shadow),
+        0 1px 3px var(--color-primary-shadow);*/
+
+      border: 2px solid;
+      border-right-color: var(--color-primary-shadow);
+      border-bottom-color: var(--color-primary-shadow);
+      border-top-color: transparent;
+      border-left-color: transparent;
+
+      &:hover {
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-top-color: var(--color-primary-shadow);
+        border-left-color: var(--color-primary-shadow);
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+      img {
+        position: relative;
+        object-fit: contain;
+        margin: 5%;
+        width: 90%;
+        min-height: 90%;
+      }
+
+      .caption {
+        position: relative;
+        width: fit-content;
+        color: white;
+        background-color: var(--font-color-primary);
+        padding: 10px;
+
+        font-size: 15px;
+        font-weight: 500;
+        z-index: 3;
+        margin-top: 10px;
+      }
+    }
+  }
+}
