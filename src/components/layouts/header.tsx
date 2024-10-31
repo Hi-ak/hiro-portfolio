@@ -17,10 +17,6 @@ const linkList = [
     name: "Awards",
     url: "/#awards",
   },
-  {
-    name: "Contact",
-    url: "/contact",
-  },
 ];
 export const Header = ({}) => {
   return (

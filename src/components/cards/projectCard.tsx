@@ -1,4 +1,4 @@
-import styles from "@/common/styles/components/cards/projectCard.module.scss";
+import styles from "@/common/styles/components/cards/ProjectCard.module.scss";
 import { PhotoStyle, Project } from "@/common/types/project";
 
 export const ProjectCard: React.FC<{
