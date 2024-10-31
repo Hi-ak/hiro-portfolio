@@ -19,10 +19,10 @@ export const SOCIAL_INFO_LIST: SocialInfo[] = [
     caption: "Instagram, @HiroAk_ar",
   },
   {
-    name: "Twitter (JP)",
+    name: "X (JP)",
     iconPath: "social/twitter.png",
     profileUrl: "https://twitter.com/masseokkun",
-    caption: "Twitter (JP), @masseokkun",
+    caption: "X (JP), @masseokkun",
   },
   {
     name: "Facebook",
