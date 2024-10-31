@@ -58,6 +58,15 @@ export const AwardsSectionComponent: React.FC<{ awardList: Award[] }> = ({
               >
                 {award.orgName}
               </h4>
+              {award.tags ? (
+                <div className={styles.skillTagContainer}>
+                  {award.tags?.map((tag, index) => (
+                    <SkillTag key={index} skill={tag} />
+                  ))}
+                </div>
+              ) : (
+                <></>
+              )}
               <p className={styles.description}>{award.description}</p>
             </VerticalTimelineElement>
           );

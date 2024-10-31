@@ -121,6 +121,17 @@
           .subtitle {
           }
 
+          .skillTagContainer {
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0 5px;
+            margin: 10px 0 5px 0;
+
+            //skillTag.modues.scssに
+          }
+
           .description {
             font-size: 18px;
           }

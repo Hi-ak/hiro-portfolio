@@ -1,0 +1,15 @@
+.tag {
+  background-color: var(--color-skill-tag);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  min-width: 50px;
+  .skillName {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--font-color-primary);
+    font-size: 15px;
+  }
+}
