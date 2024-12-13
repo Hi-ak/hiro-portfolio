@@ -40,7 +40,7 @@ export const AwardList: Award[] = [
         Finalist in Japanese Contest, Leader
       </a>
     ),
-    orgName: "Diamond Challenge by Diamond Challenge",
+    orgName: "Diamond Challenge by University of Delaware",
     description:
       "Introduce AgelessEngage, a mobile app for seniors to find jobs using their career skills. Competed as the only non-international school competitior.",
     category: AwardCategory.Business,
